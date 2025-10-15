@@ -1,9 +1,11 @@
 {
 	"name": "veggie-tools-mcp",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"deploy": "wrangler deploy",
+		"deploy-full": "cd frontend && npm run build && cd .. && cp -r frontend/out/* public/ && wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
@@ -11,8 +13,12 @@
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@cloudflare/workers-types": "^4.20241127.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.43.0"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.20.0"
 	}
 }

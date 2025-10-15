@@ -7,8 +7,16 @@
 	"name": "veggie-tools-mcp",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-10-11",
-	"compatibility_flags": [
-		"global_fetch_strictly_public"
+	"compatibility_flags": ["global_fetch_strictly_public"],
+	"routes": [
+		{
+			"pattern": "veggie.tools",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.veggie.tools",
+			"custom_domain": true
+		}
 	],
 	"assets": {
 		// The path to the directory containing the `index.html` file to be served at `/`
