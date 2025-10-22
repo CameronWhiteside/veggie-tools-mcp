@@ -6,6 +6,7 @@
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"deploy-full": "cd frontend && npm run build && cd .. && cp -r frontend/out/* public/ && wrangler deploy",
+		"test-bots": "echo '🤖 Starting bot crawler test with 100 requests...' && echo '' && ./test-requests.sh && echo '' && echo '✅ Bot test completed!'",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",

@@ -150,7 +150,7 @@ export default function LandingPage() {
 					</div>
 
 					{/* Demo Card Section - Centered below hero */}
-					<motion.div 
+					<motion.div
 						className="mt-16"
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}

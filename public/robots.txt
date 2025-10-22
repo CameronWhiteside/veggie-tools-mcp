@@ -1,12 +1,13 @@
 # Robots.txt for Veggie Tools MCP Server
-# This is a public API service - allowing all bots
+# Disallowing all bots from accessing content
 # Domain: https://veggie.tools
 
-User-agent: *
-Allow: /*?___?#*+2093ajf;la34*&%(^5)
 
-# Sitemap (if you add one in the future)
+User-Agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
 # Sitemap: https://veggie.tools/sitemap.xml
-
-# Rate limiting recommendation
-Crawl-delay: 1
